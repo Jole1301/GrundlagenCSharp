@@ -26,7 +26,19 @@ namespace Datentypen
             double Gleitkommazahlen64Bit; // ca 15 stellen genau
             decimal Gleitkommazahlen128Bit; // ca 30 stellen genau
 
+            ///////////////////////////////////
+
+            bool JaOderNein; // exakt zwei wertr. true(1) und false (0)
+
             Console.WriteLine("Hello World!");
+        } // ende Main
+
+        enum MyEnum
+        {
+            A = 1,
+            B = A*2,
+            C = B*2,
+            D = C*2
         }
     }
 }
