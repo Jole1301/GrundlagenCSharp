@@ -3,15 +3,6 @@ using System.Collections.Generic;
 
 namespace Kontrollstrukturen
 {
-    enum Programmzustaende
-    {
-        Starting,
-        Running,
-        Stopping,
-        Stopped,
-        Paused
-    }
-
 
     class Program
     {
@@ -41,6 +32,7 @@ namespace Kontrollstrukturen
             {
 
             }
+
             int VariableA;
 
             //          (bedinung       ? true : false)
