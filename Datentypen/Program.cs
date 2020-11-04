@@ -7,6 +7,9 @@ namespace Datentypen
     {
         static void Main(string[] args)
         {
+
+            #region Datentypen und Konteiner
+
             Console.WriteLine("asdas");
 
             long Ganzzahlen64Bit; // -9 trillionen bis 9 trillionen
@@ -61,8 +64,44 @@ namespace Datentypen
             // ListOfThousendByte.Count enthält die anzahl der elemente 
             // ListOfThousendByte.Capacity enthält die grösse der Liste 
 
+            LinkedList<byte> LinkedListOfByte = new LinkedList<byte>(); // erstellen eine LinkedList
+            // dynamische länge, nicht hintereinander im RAM,Einfügen und löschen überall erlaubt
+            #endregion
 
-            Console.WriteLine("Hello World!");
+
+            int A = 4;
+            int B = 9;
+            int AdditionErgebnis = A + B; // 13
+            int SubtraktionsErgebnis = A - B; // -5
+            int DivisionsErgebnis = A / B; // 0
+            int MultiplikationsErgebnis = A * B; // 36
+            int ModuloErgebnis = A % B; // rest 4
+
+            int IncrementErgebnisA = A++; // 4, A wird nach der Benutzung raufgezählt 
+            int IncrementErgebnisB = ++B; // 10, B wird vor der Benutzung raufgezählt
+
+
+            /// Übung
+            /// 
+
+            int Alpha = 4;
+            int Bravo = 6;
+
+            // Alpha = 5
+            // Bravo = 7
+            //      11        4     +     7
+            int ErgebnisA = Alpha++ + ++Bravo;
+
+            int Charly = 4;
+            int Delta = 6;
+
+            // Charly = 6
+            // Delta = 9
+            //                  5    +    5     +     7   +     8   +   8
+            int ErgebnisB = ++Charly + Charly++ + ++Delta + ++Delta + Delta++;
+
+            Console.WriteLine(ErgebnisA);
+            Console.WriteLine(ErgebnisB);
         } // ende Main
 
         enum MyEnum
